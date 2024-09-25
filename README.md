@@ -59,87 +59,88 @@ This are the columns on the dataset:
 
 
 #### Column info
-      Column                  Non-Null Count  Dtype  
+   |   Column                  |Non-Null Count  |Dtype|  
 ---  ------                  --------------  -----  
- 0   Event.Id                88889 non-null  object 
- 1   Investigation.Type      90348 non-null  object 
- 2   Accident.Number         88889 non-null  object 
- 3   Event.Date              88889 non-null  object 
- 4   Location                88837 non-null  object 
- 5   Country                 88663 non-null  object 
- 6   Latitude                34382 non-null  object 
- 7   Longitude               34373 non-null  object 
- 8   Airport.Code            50249 non-null  object 
- 9   Airport.Name            52790 non-null  object 
- 10  Injury.Severity         87889 non-null  object 
- 11  Aircraft.damage         85695 non-null  object 
- 12  Aircraft.Category       32287 non-null  object 
- 13  Registration.Number     87572 non-null  object 
- 14  Make                    88826 non-null  object 
- 15  Model                   88797 non-null  object 
- 16  Amateur.Built           88787 non-null  object 
- 17  Number.of.Engines       82805 non-null  float64
- 18  Engine.Type             81812 non-null  object 
- 19  FAR.Description         32023 non-null  object 
- 20  Schedule                12582 non-null  object 
- 21  Purpose.of.flight       82697 non-null  object 
- 22  Air.carrier             16648 non-null  object 
- 23  Total.Fatal.Injuries    77488 non-null  float64
- 24  Total.Serious.Injuries  76379 non-null  float64
- 25  Total.Minor.Injuries    76956 non-null  float64
- 26  Total.Uninjured         82977 non-null  float64
- 27  Weather.Condition       84397 non-null  object 
- 28  Broad.phase.of.flight   61724 non-null  object 
- 29  Report.Status           82508 non-null  object 
- 30  Publication.Date        73659 non-null  object 
+ |0|   Event.Id|                88889 non-null|  object| 
+ |1|  Accident.Number|         88889 non-null|  object| 
+ |3|   Event.Date|              88889 non-null|  object| 
+ |4|  Location|                88837 non-null|  object| 
+ |5|  Country|                 88663 non-null|  object| 
+ |6|  Latitude|                34382 non-null|  object| 
+ |7|  Longitude|               34373 non-null|  object| 
+ |8|  Airport.Code|            50249 non-null|  object| 
+ |9|  Airport.Name|            52790 non-null|  object| 
+ |10|  Injury.Severity|         87889 non-null|  object| 
+ |11| Aircraft.damage|         85695 non-null|  object| 
+ |12| Aircraft.Category|       32287 non-null|  object| 
+ |13| Registration.Number|     87572 non-null|  object| 
+ |14| Make|                    88826 non-null|  object| 
+ |15| Model|                   88797 non-null|  object| 
+ |16| Amateur.Built|           88787 non-null|  object| 
+ |17| Number.of.Engines|       82805 non-null|  float64|
+ |18| Engine.Type|             81812 non-null|  object| 
+ |19| FAR.Description|         32023 non-null|  object| 
+ |20| Schedule|                12582 non-null|  object| 
+ |21| Purpose.of.flight|       82697 non-null|  object| 
+ |22| Air.carrier|             16648 non-null|  object| 
+ |23| Total.Fatal.Injuries|    77488 non-null|  float64|
+ |24| Total.Serious.Injuries|  76379 non-null|  float64|
+ |25| Total.Minor.Injuries|    76956 non-null|  float64|
+ |26| Total.Uninjured|         82977 non-null|  float64|
+ |27| Weather.Condition|       84397 non-null|  object| 
+ |28| Broad.phase.of.flight|   61724 non-null|  object| 
+ |29| Report.Status|           82508 non-null|  object| 
+ |30| Publication.Date|        73659 non-null|  object| 
 
 
 ### 2.3 Summary Statistics
 This provides statistical summary for numerical columns
-	   Number.of.Engines	 Total.Fatal.Injuries	Total.Serious.Injuries	Total.Minor.Injuries	Total.Uninjured
-count	82805.000000	      77488.000000	         76379.000000	         76956.000000	      82977.000000
-mean	1.146585	            0.647855	               0.279881	               0.357061	            5.325440
-std	0.446510	            5.485960	               1.544084	               2.235625	            27.913634
-min	0.000000	            0.000000	               0.000000	               0.000000	            0.000000
-25%	1.000000	            0.000000	               0.000000	               0.000000	            0.000000
-50%	1.000000	            0.000000	               0.000000	               0.000000	            1.000000
-75%	1.000000	            0.000000	               0.000000	               0.000000	            2.000000
-max	8.000000	            349.000000	            161.000000	            380.000000	         699.000000
+| Statistic | Number of Engines | Total Fatal Injuries | Total Serious Injuries | Total Minor Injuries | Total Uninjured |
+|-----------|-------------------|----------------------|------------------------|---------------------|-----------------|
+| Count     | 82,805.000         | 77,488.000           | 76,379.000             | 76,956.000          | 82,977.000      |
+| Mean      | 1.146              | 0.648                | 0.280                  | 0.357               | 5.325           |
+| Std Dev   | 0.447              | 5.486                | 1.544                  | 2.236               | 27.914          |
+| Min       | 0.000              | 0.000                | 0.000                  | 0.000               | 0.000           |
+| 25%       | 1.000              | 0.000                | 0.000                  | 0.000               | 0.000           |
+| 50%       | 1.000              | 0.000                | 0.000                  | 0.000               | 1.000           |
+| 75%       | 1.000              | 0.000                | 0.000                  | 0.000               | 2.000           |
+| Max       | 8.000              | 349.000              | 161.000                | 380.000             | 699.000         |
+
 
 ### 2.4 Data Quality
 The dataset has multiple missing values that will be delt with by ether imputation or dropping rows and columns.
 This is the percentage of missing values in every column:
-   Event.Id                   1459
-   Investigation.Type            0
-   Accident.Number            1459
-   Event.Date                 1459
-   Location                   1511
-   Country                    1685
-   Latitude                  55966
-   Longitude                 55975
-   Airport.Code              40099
-   Airport.Name              37558
-   Injury.Severity            2459
-   Aircraft.damage            4653
-   Aircraft.Category         58061
-   Registration.Number        2776
-   Make                       1522
-   Model                      1551
-   Amateur.Built              1561
-   Number.of.Engines          7543
-   Engine.Type                8536
-   FAR.Description           58325
-   Schedule                  77766
-   Purpose.of.flight          7651
-   Air.carrier               73700
-   Total.Fatal.Injuries      12860
-   Total.Serious.Injuries    13969
-   Total.Minor.Injuries      13392
-   Total.Uninjured            7371
-   Weather.Condition          5951
-   Broad.phase.of.flight     28624
-   Report.Status              7840
-   Publication.Date          16689
+   Event.Id                   1459\n
+   Investigation.Type            0\n
+   Accident.Number            1459\n
+   Event.Date                 1459\n
+   Location                   1511\n
+   Country                    1685\n
+   Latitude                  55966\n
+   Longitude                 55975\n
+   Airport.Code              40099\n
+   Airport.Name              37558\n
+   Injury.Severity            2459\n
+   Aircraft.damage            4653\n
+   Aircraft.Category         58061\n
+   Registration.Number        2776\n
+   Make                       1522\n
+   Model                      1551\n
+   Amateur.Built              1561\n
+   Number.of.Engines          7543\n
+   Engine.Type                8536\n
+   FAR.Description           58325\n
+   Schedule                  77766\n
+   Purpose.of.flight          7651\n
+   Air.carrier               73700\n
+   Total.Fatal.Injuries      12860\n
+   Total.Serious.Injuries    13969\n
+   Total.Minor.Injuries      13392\n
+   Total.Uninjured            7371\n
+   Weather.Condition          5951\n
+   Broad.phase.of.flight     28624\n
+   Report.Status              7840\n
+   Publication.Date          16689\n
 
 ## 3. Data Analysis
 After an intensive data cleaning procces we have a dataframe with 78049 rows and 21 columns.
