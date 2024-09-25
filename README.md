@@ -59,38 +59,38 @@ This are the columns on the dataset:
 
 
 #### Column info
-   |   Column                  |Non-Null Count  |Dtype|  
----  ------                  --------------  -----  
- |0|   Event.Id|                88889 non-null|  object| 
- |1|  Accident.Number|         88889 non-null|  object| 
- |3|   Event.Date|              88889 non-null|  object| 
- |4|  Location|                88837 non-null|  object| 
- |5|  Country|                 88663 non-null|  object| 
- |6|  Latitude|                34382 non-null|  object| 
- |7|  Longitude|               34373 non-null|  object| 
- |8|  Airport.Code|            50249 non-null|  object| 
- |9|  Airport.Name|            52790 non-null|  object| 
- |10|  Injury.Severity|         87889 non-null|  object| 
- |11| Aircraft.damage|         85695 non-null|  object| 
- |12| Aircraft.Category|       32287 non-null|  object| 
- |13| Registration.Number|     87572 non-null|  object| 
- |14| Make|                    88826 non-null|  object| 
- |15| Model|                   88797 non-null|  object| 
- |16| Amateur.Built|           88787 non-null|  object| 
- |17| Number.of.Engines|       82805 non-null|  float64|
- |18| Engine.Type|             81812 non-null|  object| 
- |19| FAR.Description|         32023 non-null|  object| 
- |20| Schedule|                12582 non-null|  object| 
- |21| Purpose.of.flight|       82697 non-null|  object| 
- |22| Air.carrier|             16648 non-null|  object| 
- |23| Total.Fatal.Injuries|    77488 non-null|  float64|
- |24| Total.Serious.Injuries|  76379 non-null|  float64|
- |25| Total.Minor.Injuries|    76956 non-null|  float64|
- |26| Total.Uninjured|         82977 non-null|  float64|
- |27| Weather.Condition|       84397 non-null|  object| 
- |28| Broad.phase.of.flight|   61724 non-null|  object| 
- |29| Report.Status|           82508 non-null|  object| 
- |30| Publication.Date|        73659 non-null|  object| 
+|   |   Column                  |Non-Null Count  |Dtype|  
+|---|  ------                  |--------------  |-----|  
+|0|   Event.Id|                88889 non-null|  object| 
+|1|  Accident.Number|         88889 non-null|  object| 
+|3|   Event.Date|              88889 non-null|  object| 
+|4|  Location|                88837 non-null|  object| 
+|5|  Country|                 88663 non-null|  object| 
+|6|  Latitude|                34382 non-null|  object| 
+|7|  Longitude|               34373 non-null|  object| 
+|8|  Airport.Code|            50249 non-null|  object| 
+|9|  Airport.Name|            52790 non-null|  object| 
+|10|  Injury.Severity|         87889 non-null|  object| 
+|11| Aircraft.damage|         85695 non-null|  object| 
+|12| Aircraft.Category|       32287 non-null|  object| 
+|13| Registration.Number|     87572 non-null|  object| 
+|14| Make|                    88826 non-null|  object| 
+|15| Model|                   88797 non-null|  object| 
+|16| Amateur.Built|           88787 non-null|  object| 
+|17| Number.of.Engines|       82805 non-null|  float64|
+|18| Engine.Type|             81812 non-null|  object| 
+|19| FAR.Description|         32023 non-null|  object| 
+|20| Schedule|                12582 non-null|  object| 
+|21| Purpose.of.flight|       82697 non-null|  object| 
+|22| Air.carrier|             16648 non-null|  object| 
+|23| Total.Fatal.Injuries|    77488 non-null|  float64|
+|24| Total.Serious.Injuries|  76379 non-null|  float64|
+|25| Total.Minor.Injuries|    76956 non-null|  float64|
+|26| Total.Uninjured|         82977 non-null|  float64|
+|27| Weather.Condition|       84397 non-null|  object| 
+|28| Broad.phase.of.flight|   61724 non-null|  object| 
+|29| Report.Status|           82508 non-null|  object| 
+|30| Publication.Date|        73659 non-null|  object| 
 
 
 ### 2.3 Summary Statistics
