@@ -13,6 +13,10 @@ With the increase of customers, the company has had problems getting planes read
 2. To anayze the dataset and come up with aactionalble insight
 3. To create an interactive dashboard
 
+### 1.4 Research Questions
+- What role does the weather condition play in accidents
+- What is the trend in accident rates for aircrafts from 1962 to 2023
+
 ### 1.4 Stakeholders
 - Tujenge LTD Management
 - Tujenge LTD Investors
@@ -45,6 +49,14 @@ This are the columns on the dataset:
        'Total.Serious.Injuries', 'Total.Minor.Injuries', 'Total.Uninjured',
        'Weather.Condition', 'Broad.phase.of.flight', 'Report.Status',
        'Publication.Date'])
+
+**Weather terminologies:**
+   - **VMC** (Visual Meteorological Conditions): Refers to conditions where visibility is sufficient for pilots to operate an aircraft by sight. The majority of flights occur under these conditions, but accidents can still happen due to factors unrelated to weather, such as mechanical failures or human error.
+
+   - **IMC** (Instrument Meteorological Conditions): These are poor visibility conditions where pilots must rely on instruments for navigation. Accidents under IMC often involve complex weather challenges like fog, clouds, or heavy precipitation, increasing the difficulty of flying safely.
+
+   - **UNK** (Unknown): In some cases, the weather conditions at the time of the accident are unknown or unreported. These entries indicate a lack of data and may require further investigation.
+
 
 #### Column info
       Column                  Non-Null Count  Dtype  
@@ -128,3 +140,16 @@ This is the percentage of missing values in every column:
    Broad.phase.of.flight     28624
    Report.Status              7840
    Publication.Date          16689
+
+## 3. Data Analysis
+After an intensive data cleaning procces we have a dataframe with 78049 rows and 21 columns.
+
+key variables:
+   - Injury_Severity: It is a categorical column that denotes the level of injuries to passengers in accidents.
+   - Aircraft_Damage: it a categorrical column that shows teh types of damage reported for aircraft.
+   - Number_of Engines: it uses numerics to denote the number of engines in an aircraft and it provides insights  into aircraft types.
+   - Total_Injuries: Overview of total injuries from incidents.
+   -Total_Number_of_passengers: this is a factor engineered column containing the total number of passengers who were in the aircraft
+
+
+![Dashboard]('Dashboard.png')
