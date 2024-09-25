@@ -40,7 +40,7 @@ The data is from the National Transportation Safety Board(NTSB) that includes av
 The data id from National Transportation Safety Board (NTSB) and it contains aviation incidents from 1962 to 2023.
 The dataset has 90,348 records which are instances of every incident or accident it also has 31 columns which are fields related to aviation accidents and incidents.
 This are the columns on the dataset:
-      (['Event.Id', 'Investigation.Type', 'Accident.Number', 'Event.Date',
+      `('Event.Id', 'Investigation.Type', 'Accident.Number', 'Event.Date',
        'Location', 'Country', 'Latitude', 'Longitude', 'Airport.Code',
        'Airport.Name', 'Injury.Severity', 'Aircraft.damage',
        'Aircraft.Category', 'Registration.Number', 'Make', 'Model',
@@ -48,7 +48,7 @@ This are the columns on the dataset:
        'Schedule', 'Purpose.of.flight', 'Air.carrier', 'Total.Fatal.Injuries',
        'Total.Serious.Injuries', 'Total.Minor.Injuries', 'Total.Uninjured',
        'Weather.Condition', 'Broad.phase.of.flight', 'Report.Status',
-       'Publication.Date'])
+       'Publication.Date')`
 
 **Weather terminologies:**
    - **VMC** (Visual Meteorological Conditions): Refers to conditions where visibility is sufficient for pilots to operate an aircraft by sight. The majority of flights occur under these conditions, but accidents can still happen due to factors unrelated to weather, such as mechanical failures or human error.
@@ -110,37 +110,39 @@ This provides statistical summary for numerical columns
 ### 2.4 Data Quality
 The dataset has multiple missing values that will be delt with by ether imputation or dropping rows and columns.
 This is the percentage of missing values in every column:
-   Event.Id                   1459\n
-   Investigation.Type            0\n
-   Accident.Number            1459\n
-   Event.Date                 1459\n
-   Location                   1511\n
-   Country                    1685\n
-   Latitude                  55966\n
-   Longitude                 55975\n
-   Airport.Code              40099\n
-   Airport.Name              37558\n
-   Injury.Severity            2459\n
-   Aircraft.damage            4653\n
-   Aircraft.Category         58061\n
-   Registration.Number        2776\n
-   Make                       1522\n
-   Model                      1551\n
-   Amateur.Built              1561\n
-   Number.of.Engines          7543\n
-   Engine.Type                8536\n
-   FAR.Description           58325\n
-   Schedule                  77766\n
-   Purpose.of.flight          7651\n
-   Air.carrier               73700\n
-   Total.Fatal.Injuries      12860\n
-   Total.Serious.Injuries    13969\n
-   Total.Minor.Injuries      13392\n
-   Total.Uninjured            7371\n
-   Weather.Condition          5951\n
-   Broad.phase.of.flight     28624\n
-   Report.Status              7840\n
-   Publication.Date          16689\n
+   | Column Name             | Non-Null Count |
+|-------------------------|----------------|
+| Event.Id                      | 145  |
+| Investigation.Type        | 0              |
+| Accident.Number           | 1459    |
+| Event.Date                 | 1459     |
+| Location                           | 1511   |
+| Country                  | 1685  |
+| Latitude                 | 55966  |
+| Longitude               | 55975 |
+| Airport.Code                            | 40099  |
+| Airport.Name               | 37558   |
+| Injury.Severity         | 2459  |
+| Aircraft.damage          | 4653   |
+| Aircraft.Category            | 58061  |
+| Registration.Number       | 2776     |
+| Make                     | 1522 |
+| Model                   | 1551    |
+| Amateur.Built            | 1561   |
+| Number.of.Engines           | 7543  |
+| Engine.Type                 | 8536           |
+| FAR.Description          | 58325      |
+| Schedule                   | 77766 |
+| Purpose.of.flight          | 7651           |
+| Air.carrier               | 73700     |
+| Total.Fatal.Injuries          | 12860  |
+| Total.Serious.Injuries  | 13969   |
+| Total.Minor.Injuries      | 13392    |
+| Total.Uninjured         | 7371   |
+| Weather.Condition               | 5951    |
+| Broad.phase.of.flight       | 28624               |
+| Report.Status                | 7840              |
+| Publication.Date          | 16689                      |
 
 ## 3. Data Analysis
 After an intensive data cleaning procces we have a dataframe with 78049 rows and 21 columns.
