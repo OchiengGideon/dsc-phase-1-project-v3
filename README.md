@@ -152,4 +152,4 @@ key variables:
    -Total_Number_of_passengers: this is a factor engineered column containing the total number of passengers who were in the aircraft
 
 
-![Dashboard]('Dashboard.png')
+![Dashboard]('./Dashboard.png')
