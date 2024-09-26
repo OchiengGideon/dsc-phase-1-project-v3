@@ -21,14 +21,14 @@ With the increase of customers, the company has had problems getting planes read
 - Tujenge LTD Management
 - Tujenge LTD Investors
 
-### 1.5 Success matrix
+### 1.6 Success matrix
 - Being able to determining which aircraft are the lowest risk for the company
 - Being able to translate my findings into actionable insights that the head of the new aviation division can use to help decide which aircraft to purchase
 - Creating an interactive dashboard
-### 1.6 Assumptions
+### 1.7 Assumptions
 - The dataset accurately reflects aviation risk factors 
 - The analysis assumes that aircraft models with lower accident frequency and severity are more suitable for purchase.
-### 1.7 Limitations
+### 1.8 Limitations
 - The dataset focuses on civil aviation accidents in the U.S. and international waters, which may not account for regional risks in areas where Tujenge operates.
 - The data spans multiple decades, and technological advancements over time may impact the relevance of older incidents.
 
@@ -153,6 +153,28 @@ key variables:
    - Number_of Engines: it uses numerics to denote the number of engines in an aircraft and it provides insights  into aircraft types.
    - Total_Injuries: Overview of total injuries from incidents.
    -Total_Number_of_passengers: this is a factor engineered column containing the total number of passengers who were in the aircraft
+**Number of Incidents Over Time**
+![Number of Incidents Over Time](./Images/Number%20of%20Incidents%20Over%20Time.png)
+From the chart bouve we can clearely see that the number of accidents have been declining with time. This can be facitated with the technological improvements and also the rules and regulations that have been enacted by aviation authorities.
 
+![Accident Counts by Number of Engines and Weather Condition](./Images/Accident%20Counts%20by%20Number%20of%20Engines%20and%20Weather%20Condition.png)
+we can see that mosts accidents happend during `Visual Meteorological Conditions(VMC)` where the pilot can clearly see. This shows that the percentage at which weather condition leads to accidents is very minial
 
+**Tableau dashboard**
+[Tableau Dashboard](https://public.tableau.com/views/learn-wb-09-24-24-GO/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![Dashboard](./Dashboard.png)
+
+
+
+## Recommendations
+1. The company should consider purchasing recently manufactured aircraft to ensure they are equipped with the latest technology, enhancing safety and efficiency.
+2. The company's pilots should undergo rigorous assessment and continuous training to ensure they possess the necessary skills to operate the aircraft safely.
+3. Aircraft with more engines may be more suitable for the organization, as data shows they are associated with a lower number of accidents.
+
+## Conclusion
+In summary, this analysis has identified significant trends and patterns related to aircraft incidents and accidents. The insights gained will assist Tujenge Ltd. in making informed decisions as they purchase the most suitable aircraft for their entry into the aviation industry. This analysis provides a foundation for enhancing safety and reliability in their operations.
+
+Further research on this topic is highly recommended to continually improve safety standards and contribute to a safer global aviation landscape.
+
+
+
